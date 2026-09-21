@@ -402,7 +402,7 @@ const ACTIONS = [
 const TEAM = [
   { name: "M'BARKI Mariam", role: "Team Leader", icon: "tl.png", image: "assets/Bureau_membres/team_leader-restored.png" },
   { name: "EL HAOUARI Achraf", role: "Vice Team Leader", icon: "vtl.png" },
-  { name: "X Aya", role: "Secrétaire Générale", icon: "sec_generale.png" },
+  { name: "ELHASNAOUI Aya", role: "Secrétaire Générale", icon: "sec_generale.png" },
   { name: "MOUTAHIR Salma", role: "Ressources Humaines", icon: "rh.png" },
   { name: "BAYOUD Zainab", role: "Chef de la cellule Communication", icon: "communication.png" },
   { name: "ESSABBAR Lamiaa", role: "Chef de la cellule Trésorier & Sponsoring", icon: "sponso.png" },
@@ -417,7 +417,7 @@ const TEAM = [
   { name: "OUARCHANE Fadwa", role: "Chef de la cellule Recherche & Formation", icon: "formation.png" },
   { name: "DEROUI Mouad", role: "Sous chef de la cellule Recherche & Formation", icon: "formation.png" },
   { name: "MOUJI Rahma", role: "Chef de la cellule Logistique & Organisation", icon: "log&events.png" },
-  { name: "X Hiba", role: "Sous Chef de la cellule Logistique & Organisation", icon: "log&events.png" }
+  { name: "CHEGRY Hiba", role: "Sous Chef de la cellule Logistique & Organisation", icon: "log&events.png" }
 ].map(member => ({
   name: "",
   field: "",
@@ -546,24 +546,12 @@ const ALBUM_MEDIA = {
       "type": "image"
     },
     {
-      "src": "assets/album/misericorde/20260307_143123.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/misericorde/20260307_143210.jpg",
       "type": "image"
     },
     {
-      "src": "assets/album/misericorde/20260307_152800.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/misericorde/20260307_171737.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/misericorde/20260307_173453.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/misericorde/20260307_175600.jpg",
@@ -580,14 +568,6 @@ const ALBUM_MEDIA = {
   ],
   "projets": [
     {
-      "src": "assets/album/photosProjets/AI_Days/20260327_150330.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/AI_Days/20260327_152209.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/photosProjets/AI_Days/20260327_153339.jpg",
       "type": "image"
     },
@@ -602,26 +582,6 @@ const ALBUM_MEDIA = {
     {
       "src": "assets/album/photosProjets/AI_Days/20260327_161750.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/photosProjets/AI_Days/20260327_180319.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/AI_Days/20260327_183134.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/AI_Days/20260327_183220.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/AI_Days/20260327_183601.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/AI_Days/20260327_183745.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/photosProjets/AI_Days/20260403_170013.jpg",
@@ -676,44 +636,16 @@ const ALBUM_MEDIA = {
       "type": "image"
     },
     {
-      "src": "assets/album/photosProjets/smileyBC/20260418_110418.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/photosProjets/smileyBC/20260418_112132.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/photosProjets/smileyBC/20260418_132738.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/smileyBC/20260418_132831.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/photosProjets/smileyBC/20260514_191915.jpg",
       "type": "image"
     },
     {
-      "src": "assets/album/photosProjets/smileyBC/20260514_192450.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/smileyBC/20260514_194049.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/photosProjets/smileyBC/20260521_191407.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/photosProjets/smileyBC/20260521_192446.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/photosProjets/smileyBC/20260521_194124.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/photosProjets/smileyBC/20260521_200653.jpg",
@@ -734,10 +666,6 @@ const ALBUM_MEDIA = {
       "type": "image"
     },
     {
-      "src": "assets/album/formation_BMCanva/20251219_155204.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/formation_BMCanva/20251219_182346.jpg",
       "type": "image"
     },
@@ -750,10 +678,6 @@ const ALBUM_MEDIA = {
     {
       "src": "assets/album/BootcampJLMgeneral/20260412_132603.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/BootcampJLMgeneral/20260412_132722.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/BootcampJLMgeneral/20260412_140734.jpg",
@@ -776,14 +700,6 @@ const ALBUM_MEDIA = {
       "type": "image"
     },
     {
-      "src": "assets/album/event_SmileyBC_Bootcamp/20260214_151116.mp4",
-      "type": "video"
-    },
-    {
-      "src": "assets/album/event_SmileyBC_Bootcamp/20260214_151418.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/event_SmileyBC_Bootcamp/20260214_153010.jpg",
       "type": "image"
     },
@@ -794,10 +710,6 @@ const ALBUM_MEDIA = {
     {
       "src": "assets/album/event_SmileyBC_Bootcamp/20260214_173410.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/journees_integration/20250919_093735.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/journees_integration/20250919_133446.jpg",
@@ -864,19 +776,11 @@ const ALBUM_MEDIA = {
   ],
   "kick-off": [
     {
-      "src": "assets/album/kick_off/20251120_165233.mp4",
-      "type": "video"
-    },
-    {
       "src": "assets/album/kick_off/20251120_171006.jpg",
       "type": "image"
     },
     {
       "src": "assets/album/kick_off/20251120_171247.jpg",
-      "type": "image"
-    },
-    {
-      "src": "assets/album/kick_off/20251120_173116.jpg",
       "type": "image"
     },
     {
@@ -892,16 +796,8 @@ const ALBUM_MEDIA = {
       "type": "image"
     },
     {
-      "src": "assets/album/kick_off/20251122_122314.jpg",
-      "type": "image"
-    },
-    {
       "src": "assets/album/kick_off/20251122_122651.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/kick_off/20251122_130257.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/kick_off/20251122_141259.jpg",
@@ -910,10 +806,6 @@ const ALBUM_MEDIA = {
     {
       "src": "assets/album/kick_off/20251122_142350.jpg",
       "type": "image"
-    },
-    {
-      "src": "assets/album/kick_off/20251122_142709.mp4",
-      "type": "video"
     },
     {
       "src": "assets/album/kick_off/20251122_150751.jpg",
