@@ -16,22 +16,13 @@ function contactIcon(file){return `assets/icon-pack-archive/page_contact/ChatGPT
 function socialLinks(){return `<div class="socials">${[['instagram','Instagram','03_20_40 (4)'],['github','GitHub','03_20_41 (6)'],['linkedin','LinkedIn','03_20_39 (2)']].map(([key,label,file])=>CLUB.social[key]?`<a href="${esc(CLUB.social[key])}" target="_blank" rel="noopener noreferrer" aria-label="${label}">${img(contactIcon(file),'')}</a>`:`<span class="social-pending" role="img" aria-label="${label} — lien à venir" title="${label} — lien à venir">${img(contactIcon(file),'')}</span>`).join('')}</div>`}
 function layout(content){app.innerHTML=header()+`<main>${content}</main>`+footer();updateThemeButton()}
 
-function contactMailto(name,email,message){return `mailto:${CLUB.email}?subject=${encodeURIComponent(`Contact JLM — ${name.trim()}`)}&body=${encodeURIComponent(`Nom : ${name.trim()}\nEmail : ${email.trim()}\n\n${message.trim()}`)}`}
 function contact(){
   const maps='https://www.google.com/maps/search/?api=1&query=32.8971757%2C-6.9137639';
   layout(`${hero('Contact','','Une idée ? Une question ? Notre équipe est à votre écoute !',[],'assets/icon-pack-archive/ensa/ensa.jpeg',true)}
-  <section class="container contact-panel contact-form-panel" id="message"><h2>Envoyez-nous un message</h2><p class="contact-intro">Une question, une idée ou une envie de collaborer ?<br>Préparez votre message, puis envoyez-le depuis votre messagerie.</p>
-    <form id="contactForm"><label class="contact-field">${img(contactIcon('03_20_38 (1)'), '')}<span class="sr-only">Nom complet (obligatoire)</span><input name="name" autocomplete="name" placeholder="Nom complet *" maxlength="100" required></label>
-    <label class="contact-field">${img(contactIcon('03_20_40 (3)'), '')}<span class="sr-only">Adresse e-mail (obligatoire)</span><input type="email" name="email" autocomplete="email" placeholder="Adresse e-mail *" maxlength="254" required></label>
-    <label class="contact-field contact-message">${img(contactIcon('03_20_41 (5)'), '')}<span class="sr-only">Votre message (obligatoire, 1 000 caractères maximum)</span><textarea id="contactMessage" name="message" placeholder="Votre message *" maxlength="1000" rows="5" required aria-describedby="messageCount"></textarea><span id="messageCount" class="message-count">0/1000</span></label>
-    <button class="btn contact-submit" type="submit">Préparer le message <span aria-hidden="true">→</span></button><p id="contactStatus" class="contact-status" role="status"></p></form>
-  </section>
   <section class="container contact-panel contact-coordinates"><div><h2>Nos coordonnées</h2><div class="contact-coordinate">${img(contactIcon('03_20_42 (7)'), '')}<div><h3>Email</h3><a href="mailto:${CLUB.email}">${CLUB.email}</a></div></div><div class="contact-coordinate">${img(contactIcon('03_20_43 (9)'), '')}<div><h3>ENSA Khouribga</h3><address>École Nationale des Sciences Appliquées<br>Boulevard Béni Amir, BP 77<br>Khouribga 25000, Maroc</address></div></div><div class="contact-follow"><h3>Suivez-nous</h3>${socialLinks()}</div></div>
   <div class="contact-map"><iframe title="Localisation de l’ENSA Khouribga" src="https://maps.google.com/maps?q=32.8971757,-6.9137639&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a class="map-link" href="${maps}" target="_blank" rel="noopener noreferrer">${img(contactIcon('03_20_43 (9)'), '')}Voir sur Google Maps <span aria-hidden="true">↗</span></a></div></section>
-  <section class="container contact-cta"><div><h2>Ensemble, faisons la différence !</h2><p>Des idées aujourd’hui pour un Maroc meilleur demain.</p></div><a class="btn" href="#message">Contactez-nous <span aria-hidden="true">→</span></a></section>`);
-  const form=document.getElementById('contactForm'),message=document.getElementById('contactMessage');
-  message.addEventListener('input',()=>{message.setCustomValidity('');document.getElementById('messageCount').textContent=`${message.value.length}/1000`});
-  form.addEventListener('submit',e=>{e.preventDefault();message.setCustomValidity(message.value.trim()?'':'Veuillez saisir votre message.');if(!form.reportValidity())return;const fields=new FormData(form);window.location.href=contactMailto(fields.get('name'),fields.get('email'),fields.get('message'));document.getElementById('contactStatus').textContent='Votre messagerie va s’ouvrir avec le message préparé. Il vous reste à l’envoyer. Vous pouvez aussi nous écrire directement à '+CLUB.email+'.'});
+  <section class="container contact-cta"><div><h2>Ensemble, faisons la différence !</h2><p>Des idées aujourd’hui pour un Maroc meilleur demain.</p></div><a class="btn" href="mailto:${CLUB.email}">Contactez-nous <span aria-hidden="true">→</span></a></section>`);
+
 }
 document.addEventListener('click',e=>{if(e.target.closest('.main-nav a'))document.getElementById('mainNav')?.classList.remove('open')});
 
@@ -99,7 +90,7 @@ function team(){
   <section class="container section team-lead-section" id="equipe">
     <article class="leader team-leader">
       ${memberPortrait(leader)}
-      <div class="member-copy"><span class="member-label">${esc(leader.role)}</span><h2>${esc(leader.name || leader.role)}</h2>${leader.name?`<p class="member-role">${esc(leader.role)}</p>`:''}${leader.field?`<p class="member-field">${esc(leader.field)}</p>`:''}<p class="leader-motto">Transformer les idées en impact.</p></div>
+      <div class="member-copy"><span class="member-label">${esc(leader.role)}</span><h2>${esc(leader.name || leader.role)}</h2>${leader.name?`<p class="member-role">${esc(leader.role)}</p>`:''}${leader.field?`<p class="member-field">${esc(leader.field)}</p>`:''}</div>
     </article>
   </section>
   <section class="container section team-members">${heading('Les membres du','bureau')}<div class="grid three team-grid">${TEAM.slice(1).map(m=>`<article class="person team-person">${memberPortrait(m)}<div class="member-copy"><h3>${esc(m.name || m.role)}</h3>${m.name?`<p class="member-role">${esc(m.role)}</p>`:''}${m.field?`<small>${esc(m.field)}</small>`:''}</div></article>`).join('')}</div></section>

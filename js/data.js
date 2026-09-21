@@ -7,7 +7,7 @@ const CLUB = {
   name: "JLM ENSA Khouribga",
   tagline: "Des jeunes idées pour un Maroc meilleur demain.",
   slogan: "Étudiants · Innovation · Impact",
-  history: "Le JLM ENSA Khouribga est une communauté étudiante engagée qui transforme les idées en projets et les valeurs en actions concrètes.",
+  history: "Le JLM ENSA Khouribga est une communauté étudiante engagée qui transforme les idées en projets et les valeurs en actions concrètes. Nous organisons aussi des formations ciblées pour développer les compétences des participants. L’innovation est notre signe distinctif : elle guide nos projets et notre engagement pour un Maroc meilleur demain.",
   mission: "Mobiliser les compétences étudiantes pour des projets à impact positif.",
   vision: "Être un club de référence à l’ENSA Khouribga pour un Maroc plus durable et plus équitable.",
 
@@ -26,9 +26,9 @@ const CLUB = {
   ],
 
   pillars: [
-    { title: "Capital humain", text: "Développer les compétences", icon: "assets/icon-pack-archive/pagePrincipale/ChatGPT Image 18 sept. 2026, 01_44_57.png", color: "red" },
+    { title: "Solidarité", text: "Agir ensemble pour les autres", icon: "assets/icon-pack-archive/pagePrincipale/ChatGPT Image 18 sept. 2026, 01_44_57.png", color: "red" },
     { title: "Environnement", text: "Des solutions durables", icon: "assets/icon-pack-archive/pagePrincipale/ChatGPT Image 18 sept. 2026, 02_06_24.png", color: "green" },
-    { title: "Entrepreneuriat", text: "Transformer les idées en projets", icon: "assets/icon-pack-archive/pagePrincipale/ChatGPT Image 18 sept. 2026, 01_45_08.png", color: "orange" },
+    { title: "Entrepreneuriat social", text: "Transformer les idées en projets", icon: "assets/icon-pack-archive/pagePrincipale/ChatGPT Image 18 sept. 2026, 01_45_08.png", color: "orange" },
     { title: "Pérennité", text: "Des actions à fort impact", icon: "assets/icon-pack-archive/pagePrincipale/ChatGPT Image 18 sept. 2026, 01_45_18.png", color: "dark" }
   ],
 
